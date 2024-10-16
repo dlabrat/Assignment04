@@ -25,7 +25,7 @@ function calcNumbs(myNum, myNum2, chsnOpt) {
         return('The division gives '+ myResult.toFixed(3)+'.')
         break
     }
-   
+
 }
 // COLLECT FIRST NUMBER FROM USER
 givnNum = parseInt(prompt("Enter first number for calculation:  "))
@@ -39,5 +39,8 @@ console.log(usrOpt)
 
 // CALL THE FUNCTION AND RETURN THE RESULT WITHIN AN ALERT
 numResult= calcNumbs(givnNum,givnNum2,usrOpt)
-alert(numResult)
-
+if (usrOpt>0 && usrOpt <=4){
+    alert(numResult)
+}else {
+    alert('Not an option for calculator. \nGoodbye.')
+}
